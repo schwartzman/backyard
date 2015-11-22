@@ -67,8 +67,9 @@ you set a great foundation, you won't need to add too many styles in
 the other stylesheets. Remember, keep it light: Speed is Important.
 *********************/
 
-// styles in base.scss
+@import "partials/header";
 @import "breakpoints/base";
+@import "partials/footer";
 
 /*********************
 LARGER MOBILE DEVICES
