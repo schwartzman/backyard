@@ -34,6 +34,14 @@
 		<?php // wordpress head functions ?>
 		<?php wp_head(); ?>
 		<?php // end of wordpress head ?>
+		<?php
+		if ( has_post_thumbnail($post->ID) ) : ?>
+			<style>
+			body {
+				background-image: url(<?php echo( wp_get_attachment_url(get_post_thumbnail_id($post->ID)) );?>);
+			}
+			</style>
+		<?php endif; ?>
 
 	</head>
 
