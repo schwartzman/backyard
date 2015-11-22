@@ -30,8 +30,11 @@ WORDPRESS BODY CLASSES
 style a page via class
 ********************/
 
-.rtl {}                           /* for sites that are read right to left (i.e. hebrew) */
-.home {}                          /* home page */
+.home {
+	.hentry {
+		display: none;
+	}
+}
 .blog {}                          /* blog template page */
 .archive {}                       /* archive page */
 .date {}                          /* date archive page */
@@ -103,6 +106,12 @@ a, a:visited {
 	}
 }
 
+.nopoint {
+	&.a, & > a{
+		cursor: default;
+	}
+}
+
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
@@ -157,23 +166,11 @@ POSTS & CONTENT STYLES
 }
 
 		.hentry {
-			background-color: $white;
-			border-radius: 3px;
+			@include ghostback();
+			@include ghostbord();
 			margin-bottom: 1.5em;
-			border: 1px solid $border-color;
-
 			header {
-				border-bottom: 1px solid $light-gray;
 				padding: 1.5em;
-			}
-
-			footer {
-				padding: 1.5em;
-				border-top: 1px solid $light-gray;
-
-				p {
-					margin: 0;
-				}
 			}
 
 		} /* end .hentry */

@@ -110,11 +110,9 @@ function loadGravatars() {
 */
 jQuery(document).ready(function($) {
 
-  /*
-   * Let's fire off the gravatar function
-   * You can remove this if you don't need it
-  */
-  loadGravatars();
-
+$('.nav-toggle').click(function(){
+  $('.top-nav').slideToggle(200);
+  $(this).toggleClass('fa-bars fa-times');
+});
 
 }); /* end of as page load scripts */

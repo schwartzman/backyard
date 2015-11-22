@@ -9,6 +9,30 @@ be seen on the Desktop.
 
 ******************************************************************/
 
+i.nav-toggle {
+	display: none;
+}
+
+nav {
+	float: right;
+}
+
+.nav {
+	display: block;
+	li {
+		a {
+			font-weight: 400;
+			font-size: 16px;
+		}
+	}
+	& > li {
+		& > a {
+			@include scut-vcenter-lh(90px);
+			@include scut-padding(0 n);
+		}
+	}
+}
+
 .wrap {
   width: 1040px;
 }

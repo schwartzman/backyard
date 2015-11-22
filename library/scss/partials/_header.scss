@@ -3,30 +3,35 @@ HEADER STYLES
 *********************/
 
 .header {
-	background-color: transparentize(white, 0.5);
+	@include ghostback();
+	@include ghostbord();
+	@include scut-border(none, y y n y);
 }
 
-	#logo {
-		margin: 0.75em 0;
-
-		a {
-			color: $white;
-		}
+a#logo {
+	display: inline-block;
+	font-size: 0;
+	margin: 15px 5px;
+	img {
+		width: 150px;
 	}
+}
+
+i.nav-toggle {
+	color: $g30;
+	font-size: 26px;
+	float: right;
+    top: 30px;
+    position: relative;
+    cursor: pointer;
+}
 
 /*********************
 NAVIGATION STYLES
 *********************/
 
-/*
-all navs have a .nav class applied via
-the wp_menu function; this is so we can
-easily write one group of styles for
-the navs on the site so our css is cleaner
-and more scalable.
-*/
-
 .nav {
+	display: none;
 	border-bottom: 0;
 	margin: 0;
 
@@ -36,7 +41,8 @@ and more scalable.
 			display: block;
 			color: black;
 			text-decoration: none;
-			padding: 0.75em;
+			padding: 0.5em 0.75em;
+			font-weight: 600;
 
 			/*
 			remember this is for mobile ONLY, so there's no need
@@ -62,6 +68,7 @@ and more scalable.
 		*/
 		ul.sub-menu,
 		ul.children {
+			margin: 0;
 
 			li {
 

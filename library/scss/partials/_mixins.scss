@@ -5,6 +5,13 @@ Author:
 Stylesheet: Mixins Stylesheet
 ******************************************************************/
 
+@mixin ghostback(){
+	background: transparentize(white, 0.4);
+}
+
+@mixin ghostbord(){
+	border: solid 1px transparentize(white, 0.3);
+}
 
 /*********************
 TRANSITION

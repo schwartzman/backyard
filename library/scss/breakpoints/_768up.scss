@@ -24,7 +24,7 @@ LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	width: 760px;
+	width: 98%;
 }
 
 /*********************
@@ -33,8 +33,6 @@ HEADER STYLES
 
 .header {}
 
-	#logo {}
-
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -42,73 +40,45 @@ NAVIGATION STYLES
 .nav {
 	border: 0;
 	ul {
-		background:$black;
+		@include ghostback();
 		margin-top:0;
 	}
 	li {
 		float: left;
 		position: relative;
-
+		&:hover, &:focus {
+			@include ghostback();
+		}
 		a {
 			border-bottom: 0;
-
-			/*
-			you can use hover styles here even though this size
-			has the possibility of being a mobile device.
-			*/
+			font-weight: 500;
+			@include scut-padding(0.75em n);
 			&:hover, &:focus {
-				color: $white;
-				text-decoration: underline;
+				color: black;
 			}
 		}
-
-		&:first-child {}
-		&:last-child {}
-
-		/*
-		plan your menus and drop-downs wisely.
-		*/
 		ul.sub-menu,
 		ul.children {
 			margin-top: 0;
-			border: 1px solid #ccc;
 			border-top: 0;
 			position: absolute;
 			visibility: hidden;
 			z-index: 8999;
 
 			li {
-
+				&:hover, &:focus {
+				}
 				a {
 					padding-left: 10px;
 					border-right: 0;
 					display: block;
 					width: 180px;
-					border-bottom: 1px solid #ccc;
 
 					&:hover,
-					&:focus {}
+					&:focus {
+					}
 
 					&:link {}
-				}
-
-				&:first-child {}
-
-				&:last-child {
-
-					a {
-						border-bottom: 0;
-					}
-				}
-
-				/*
-				if you need to go deeper, go nuts
-				just remember deeper menus suck
-				for usability. k, bai.
-				*/
-				ul {
-					top:0;
-					left:100%;
 				}
 			}
 
