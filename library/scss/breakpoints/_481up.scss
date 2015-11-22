@@ -105,13 +105,19 @@ POSTS & CONTENT STYLES
 FOOTER STYLES
 *********************/
 
-/*
-check your menus here. do they look good?
-do they need tweaking?
-*/
-.footer-links {
-	ul {
-		li {}
+.footer {
+	#inner-footer {
+		padding: 4px 0 3px;
 	}
-} /* end .footer-links */
-
+	.ticulars {
+		font-size: 13px;
+		float: left;
+		text-align: left;
+	}
+	.octopus {
+		text-align: right;
+	}
+	.copyright {
+		clear: both;
+	}
+}

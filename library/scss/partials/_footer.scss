@@ -1,1 +1,43 @@
+.footer {
+	clear: both;
+	background: transparentize(black, 0.3);
+	#inner-footer {
+		padding: 5px 0 3px;
+	}
+	a {
+		color: inherit;
+	}
+	p {
+		text-align: center;
+		margin: 6px 0;
+	}
+	.ticulars {
+		color: $g70;
+		font-size: 14px;
+		span {
+			display: block;
+		}
+	}
+	.octopus {
+		color: $g70;
+		font-size: 22px;
+		a + a {
+			margin-left: 10px;
+		}
+		i {
+			&.fa-facebook-square:hover {
+				color: #3b5998;
+			}
+			&.fa-instagram:hover {
+				color: #3f729b;
+			}
+		}
+	}
+	.copyright {
+		border-top: dotted 1px $g30;
+		padding-top: 8px;
+		color: $g60;
+		font-size: 12px;
+	}
+}
 

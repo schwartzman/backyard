@@ -25,6 +25,8 @@ body {
   	-moz-osx-font-smoothing: grayscale;
 }
 
+@include scut-sticky-footer-fluid('#container', '.footer');
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
