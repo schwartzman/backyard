@@ -470,8 +470,6 @@ table {
 
 // BORDER-BOX ALL THE THINGS! (http://paulirish.com/2012/box-sizing-border-box-ftw/)
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing:    border-box;
     box-sizing:         border-box;
 }
 

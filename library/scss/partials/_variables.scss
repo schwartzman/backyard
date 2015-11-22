@@ -3,12 +3,6 @@ Site Name:
 Author:
 
 Stylesheet: Variables
-
-Here is where we declare all our variables like colors, fonts,
-base values, and defaults. We want to make sure this file ONLY
-contains variables that way our files don't get all messy.
-No one likes a mess.
-
 ******************************************************************/
 
 /*********************
@@ -27,7 +21,7 @@ $white:             #fff;
 
 $light-gray:        #f8f9fa;
 $gray:              #eaedf2;
-$text-color:        #5c6b80;
+$text-color:        black;
 $meta-gray:         #9fa6b4;
 
 $tan:               #eceee5;

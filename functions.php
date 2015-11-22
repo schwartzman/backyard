@@ -29,6 +29,8 @@ function bones_ahoy() {
 
   // USE THIS TEMPLATE TO CREATE CUSTOM POST TYPES EASILY
   require_once( 'library/custom-post-type.php' );
+  
+  require_once( 'library/enqueue.php' );
 
   // launching operation cleanup
   add_action( 'init', 'bones_head_cleanup' );
@@ -229,19 +231,5 @@ function bones_comments( $comment, $args, $depth ) {
   <?php // </li> is added by WordPress automatically ?>
 <?php
 } // don't remove this bracket!
-
-
-/*
-This is a modification of a function found in the
-twentythirteen theme where we can declare some
-external fonts. If you're using Google Fonts, you
-can replace these fonts, change it in your scss files
-and be up and running in seconds.
-*/
-function bones_fonts() {
-  wp_enqueue_style('googleFonts', 'http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
-}
-
-add_action('wp_enqueue_scripts', 'bones_fonts');
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>
