@@ -22,6 +22,8 @@ function bones_ahoy() {
   
   require_once( 'library/enqueue.php' );
 
+  require_once( 'library/helpers.php' );
+
   // launching operation cleanup
   add_action( 'init', 'bones_head_cleanup' );
   // A better title
