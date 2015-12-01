@@ -17,9 +17,6 @@ function bones_ahoy() {
   //Allow editor style.
   add_editor_style( get_stylesheet_directory_uri() . '/library/css/editor-style.css' );
 
-  // let's get language support going, if you need it
-  load_theme_textdomain( 'bonestheme', get_template_directory() . '/library/translation' );
-
   // USE THIS TEMPLATE TO CREATE CUSTOM POST TYPES EASILY
   require_once( 'library/custom-post-type.php' );
   
