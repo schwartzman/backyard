@@ -6,11 +6,11 @@ Stylesheet: Mixins Stylesheet
 ******************************************************************/
 
 @mixin ghostback(){
-	background: transparentize(white, 0.4);
+	background: transparentize(whitesmoke, 0.15);
 }
 
 @mixin ghostbord(){
-	border: solid 1px transparentize(white, 0.3);
+	border: solid 1px transparentize(whitesmoke, 0.05);
 }
 
 /*********************
