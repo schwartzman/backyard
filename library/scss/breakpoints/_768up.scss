@@ -27,6 +27,14 @@ LAYOUT & GRID STYLES
 	width: 98%;
 }
 
+.third {
+	width: 94/3*1%;
+	float: left;
+	& + .third {
+		margin-left: 3%;
+	}
+
+}
 
 .page-template-template-location {
 
