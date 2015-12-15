@@ -5,17 +5,18 @@ Author:
 Stylesheet: Button Styles
 ******************************************************************/
 
-@mixin button() {
-  border: solid 1px $green-dark;
+@mixin button(){
+  border: none;
   padding: 5px 15px;
-  font-weight: $base-weight + 100;
-  color: inherit;
+  font-weight: $base-weight + 200;
+  color: whitesmoke;
+  background-color: $green-dark;
   cursor: pointer;
   display: inline-block;
-  @include transition(border-color 0.14s ease-in-out);
+  @include transition(background-color 0.14s ease-in-out);
   &:hover,
   &:active {
-    color: inherit;
-    border-color: $amber;
+    color: whitesmoke;
+    background-color: $amber;
   }
 }

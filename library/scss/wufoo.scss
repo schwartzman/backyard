@@ -1,29 +1,56 @@
 @import "libraries/scut";
 @import "partials/variables";
+@import "partials/typography";
+@import "partials/mixins";
 @import "modules/buttons";
+
+* {
+	font-family: $sans-serif !important;
+	font-weight: $base-weight !important;
+}
+
+html.embed,
+.wufoo li.focused,
+form li.focused {
+	background-color: transparent;
+}
 
 input.text,
 textarea.textarea {
 	outline: none;
-	background: whitesmoke;
-	border: solid 1px $green;
+	box-sizing: border-box;
+	background: transparentize(whitesmoke, 0.2);
+	border: solid 1px $green-dark;
+    padding: 6px 10px;
 	&:focus {
-
+		background: transparentize(whitesmoke, 0.05);
 	}
 }
 
-form li {
-	@include scut-padding(n 0);
-	&.focused {
-		background-color: none;
-		input.text,
-		textarea.textarea {
-			border-color: $amber;
-		}
+form {
+	span.req {
+	    color: firebrick !important;
+	    font-size: 1.9em;
+	    top: 8px;
+	    position: absolute;
 	}
-	&.buttons {
-		input {
-			@include button();
+	li {
+		@include scut-padding(n 0);
+		&.focused {
+			background-color: transparent;
+			input.text,
+			textarea.textarea {
+				border-color: $amber;
+			}
+		}
+		&.buttons {
+			@include scut-padding(n 0);
+			input {
+				background-color: transparent;
+				@include button();
+			}
 		}
 	}
 }
+
+
