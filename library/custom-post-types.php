@@ -34,7 +34,7 @@ function menu_item_cpt_def() {
 		'label'                 => 'menu_item',
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'thumbnail', 'page-attributes' ),
-		'taxonomies'            => array( 'meal_taxonomy' ),
+		'taxonomies'            => array( 'menu_taxonomy' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -53,41 +53,41 @@ function menu_item_cpt_def() {
 
 }
 
-function meal_taxonomy_def() {
+function menu_taxonomy_def() {
 
 	$labels = array(
-		'name'                       => _x( 'Meals', 'Taxonomy General Name', 'text_domain' ),
-		'singular_name'              => _x( 'Meal', 'Taxonomy Singular Name', 'text_domain' ),
-		'menu_name'                  => __( 'Meals', 'text_domain' ),
-		'all_items'                  => __( 'All Meals', 'text_domain' ),
-		'parent_item'                => __( 'Parent Meal', 'text_domain' ),
-		'parent_item_colon'          => __( 'Parent Meal:', 'text_domain' ),
-		'new_item_name'              => __( 'New Meal Name', 'text_domain' ),
-		'add_new_item'               => __( 'Add New Meal', 'text_domain' ),
-		'edit_item'                  => __( 'Edit Meal', 'text_domain' ),
-		'update_item'                => __( 'Update Meal', 'text_domain' ),
-		'view_item'                  => __( 'View Meal', 'text_domain' ),
-		'separate_items_with_commas' => __( 'Separate Meals with commas', 'text_domain' ),
-		'add_or_remove_items'        => __( 'Add or remove Meals', 'text_domain' ),
-		'choose_from_most_used'      => __( 'Choose from the most used', 'text_domain' ),
-		'popular_items'              => __( 'Popular Meals', 'text_domain' ),
-		'search_items'               => __( 'Search Meals', 'text_domain' ),
-		'not_found'                  => __( 'Not Found', 'text_domain' ),
-		'items_list'                 => __( 'Meals list', 'text_domain' ),
-		'items_list_navigation'      => __( 'Meals list navigation', 'text_domain' ),
+		'name'                       => 'Groups',
+		'singular_name'              => 'Group',
+		'menu_name'                  => 'Groups',
+		'all_items'                  => 'All Groups',
+		'parent_item'                => 'Parent Group',
+		'parent_item_colon'          => 'Parent Group:',
+		'new_item_name'              => 'New Group Name',
+		'add_new_item'               => 'Add New Group',
+		'edit_item'                  => 'Edit Group',
+		'update_item'                => 'Update Group',
+		'view_item'                  => 'View Group',
+		'separate_items_with_commas' => 'Separate Groups with commas',
+		'add_or_remove_items'        => 'Add or remove Groups',
+		'choose_from_most_used'      => 'Choose from the most used',
+		'popular_items'              => 'Popular Groups',
+		'search_items'               => 'Search Groups',
+		'not_found'                  => 'Not Found',
+		'items_list'                 => 'Groups list',
+		'items_list_navigation'      => 'Groups list navigation',
 	);
 	$args = array(
 		'labels'                     => $labels,
 		'hierarchical'               => true,
 		'public'                     => true,
 		'show_ui'                    => true,
-		'show_admin_column'          => true,
+		'show_admin_column'          => false,
 		'show_in_nav_menus'          => false,
 		'show_tagcloud'              => false,
 	);
-	register_taxonomy( 'meal_taxonomy', array( 'menu_item' ), $args );
+	register_taxonomy( 'menu_taxonomy', array( 'menu_item' ), $args );
 
 }
 
 add_action( 'init', 'menu_item_cpt_def', 0 );
-add_action( 'init', 'meal_taxonomy_def', 0 );
+add_action( 'init', 'menu_taxonomy_def', 0 );
