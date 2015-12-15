@@ -8,7 +8,7 @@ Stylesheet: Button Styles
 @mixin button() {
   border: solid 1px $green-dark;
   padding: 5px 15px;
-  font-weight: $weight + 100;
+  font-weight: $base-weight + 100;
   color: inherit;
   cursor: pointer;
   display: inline-block;
