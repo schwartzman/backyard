@@ -1,0 +1,29 @@
+@import "libraries/scut";
+@import "partials/variables";
+@import "modules/buttons";
+
+input.text,
+textarea.textarea {
+	outline: none;
+	background: whitesmoke;
+	border: solid 1px $green;
+	&:focus {
+
+	}
+}
+
+form li {
+	@include scut-padding(n 0);
+	&.focused {
+		background-color: none;
+		input.text,
+		textarea.textarea {
+			border-color: $amber;
+		}
+	}
+	&.buttons {
+		input {
+			@include button();
+		}
+	}
+}
