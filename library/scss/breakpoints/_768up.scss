@@ -87,7 +87,7 @@ nav {
 		}
 		a {
 			border-bottom: 0;
-			font-weight: 500;
+			font-weight: $weight + 100;
 			@include scut-padding(0.75em n);
 			&:hover, &:focus {
 				color: black;

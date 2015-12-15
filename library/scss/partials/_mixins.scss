@@ -5,12 +5,12 @@ Author:
 Stylesheet: Mixins Stylesheet
 ******************************************************************/
 
-@mixin ghostback(){
-	background: transparentize(whitesmoke, 0.15);
+@mixin ghostback() {
+	background: transparentize(whitesmoke, 0.2);
 }
 
-@mixin ghostbord(){
-	border: solid 1px transparentize(whitesmoke, 0.05);
+@mixin ghostbord() {
+	border: solid 1px transparentize(whitesmoke, 0.1);
 }
 
 /*********************
