@@ -16,15 +16,8 @@ GENERAL STYLES
 *********************/
 
 body {
-	font-family: $sans-serif;
-	font-size: 16px;
-	line-height: 1.3;
-	color: $text-color;
-	font-weight: $base-weight;
 	background: white url(../images/nothing.gif) no-repeat center center fixed;
 	background-size: cover;
-  	-webkit-font-smoothing: antialiased;
-  	-moz-osx-font-smoothing: grayscale;
 }
 
 @include scut-sticky-footer-fluid('#container', '.footer');
@@ -131,52 +124,6 @@ a, a:visited {
 	&.a, & > a{
 		cursor: default;
 	}
-}
-
-/******************************************************************
-H1, H2, H3, H4, H5 STYLES
-******************************************************************/
-
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-	text-rendering: optimizelegibility;
-	font-weight: $base-weight - 200;
-	/*
-	if you're going to use webfonts, be sure to check your weights
-	http://css-tricks.com/watch-your-font-weight/
-	*/
-
-	/* removing text decoration from all headline links */
-	a {
-		text-decoration: none;
-	}
-}
-
-// font sizes derived here:
-// http://type-scale.com/?size=18&scale=1.200&text=Backyard%20Cafe%20Headings&webfont=Raleway&font-family=Raleway
-
-h1, .h1 {
-	font-size: 2.074em;
-	line-height: 1.333em;
-}
-
-h2, .h2 {
-	font-size: 1.728em;
-	line-height: 1.4em;
-	margin-bottom: 0.375em;
-}
-
-h3, .h3 {
-	font-size: 1.44em;
-}
-
-h4, .h4 {
-	font-size: 1.2em;
-}
-
-h5, .h5 {
-	font-size: 0.833em;
-	line-height: 2.09em;
-	text-transform: uppercase;
 }
 
 /*********************
@@ -517,7 +464,6 @@ SIDEBARS & ASIDES
 		margin-bottom: 1.5em;
 	}
 
-
 /*********************
 TEMPLATES & PAGES
 *********************/
@@ -559,10 +505,8 @@ TEMPLATES & PAGES
 }
 
 .page-contact {
-
 	.contact-form {
 		border-bottom: solid 1px whitesmoke;
 		margin-bottom: 30px;
 	}
-
 }
