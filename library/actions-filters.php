@@ -40,7 +40,9 @@ function custom_menu_column_content( $column_name, $post_id ) {
 		$i = 1;
 		foreach ($terms as $term) {
 			$parent = get_term($term->parent, 'menu_taxonomy');
-			echo "$parent->name > $term->name";
+			echo '<a href="/wp-admin/edit.php?menu_taxonomy='.$term->slug.'&post_type=menu_item&orderby=menu_order+title&order=asc">'
+			.$parent->name.' > '.$term->name
+			.'</a>';
 			echo (count($terms) > $i) ? '<br>' : '';
 			$i++;
 		}
