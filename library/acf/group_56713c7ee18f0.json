@@ -1,0 +1,87 @@
+{
+    "key": "group_56713c7ee18f0",
+    "title": "Wine Prices",
+    "fields": [
+        {
+            "key": "field_56713cc7acc97",
+            "label": "Glass Price",
+            "name": "g_price",
+            "type": "number",
+            "instructions": "in USD, number only",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_56713d03f2233",
+            "label": "Bottle Price",
+            "name": "b_price",
+            "type": "number",
+            "instructions": "in USD, number only",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "menu_item"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "menu_taxonomy:organic-white-wine"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "menu_item"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "menu_taxonomy:organic-red-wine"
+            }
+        ]
+    ],
+    "menu_order": 30,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1450263204
+}
