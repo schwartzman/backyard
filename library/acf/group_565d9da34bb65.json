@@ -19,8 +19,7 @@
                 "GF": "GF",
                 "R": "R",
                 "V": "V",
-                "F": "F",
-                "O": "O"
+                "F": "F"
             },
             "default_value": [
 
@@ -132,5 +131,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1450176775
+    "modified": 1450243576
 }

@@ -11,7 +11,7 @@
 					<section class="entry-content cf" itemprop="articleBody">
 						<div class="contact-form">
 							<div id="wufoo-wxvatyd1u3dz4a">
-							Fill out our <a href="https://emmafountain.wufoo.com/forms/wxvatyd1u3dz4a">contact form</a>.
+							Please fill out our <a href="https://emmafountain.wufoo.com/forms/wxvatyd1u3dz4a">contact form</a>.
 							</div>
 							<script type="text/javascript">var wxvatyd1u3dz4a;(function(d, t) {
 							var s = d.createElement(t), options = {
