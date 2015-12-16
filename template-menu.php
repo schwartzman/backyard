@@ -20,8 +20,9 @@
 							$group = get_term_by('slug', $post->post_name, 'menu_taxonomy');
 
 							$args = array(
-								'orderby' => 'description',
-								'fields' => 'names',
+								// this orderby option requires
+								// https://wordpress.org/plugins/taxonomy-terms-order/
+								'orderby' => 'term_order',
 								'child_of' => $group->term_id
 							);
 							$subgroups = get_terms('menu_taxonomy', $args);
@@ -35,14 +36,15 @@
 									'tax_query' => array(
 										array(
 											'taxonomy' => 'menu_taxonomy',
-											'field'    => 'name',
-											'terms'    => $subgroup,
+											'field'    => 'id',
+											'terms'    => $subgroup->term_id,
 										)
 									)
 								);
 								$mitems = new WP_Query($args);
 
-								echo '<h2 class="h3">'.$subgroup.'</h2>';
+								echo '<h2 class="h3">'.$subgroup->name.'</h2>';
+								echo ($subgroup->description) ? "<p>$subgroup->description</p>" : '';
 								while ($mitems->have_posts()) : $mitems->the_post();
 									backyard\menu_item_print();
 								endwhile;
