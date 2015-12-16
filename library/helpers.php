@@ -20,6 +20,9 @@ function menu_item_print() {
 	echo ( get_field('price') ) ? ' | $'.get_field('price') : '';
 	echo ( get_field('note') ) ? ' | <span class="note">'.get_field('note').'</span>' : '';
 	echo '</p>';
+	if (get_field('g_price')):
+		echo '<p class="wine_dets h4">Glass | $'.get_field('g_price').'<br>Bottle | $'.get_field('b_price').'</p>';
+	endif;
 	if( have_rows('ings') ):
 		echo '<p class="ingredients">';
 	    while ( have_rows('ings') ) : the_row();

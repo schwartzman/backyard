@@ -473,15 +473,23 @@ TEMPLATES & PAGES
 		margin-top: 0;
 	}
 	.mi_head {
-		margin-bottom: 0;
 		font-weight: $base-weight;
 		font-size: 1em;
+		margin-bottom: 0;
+		& + .mi_head {
+			margin-top: 0.3em;
+		}
 		span.note {
 			font-size: 0.9em;
 		}
 	}
 	.ingredients {
 		font-size: 0.95em;
+		margin-bottom: 1.2rem;
+	}
+	.wine_dets {
+		font-size: 0.9em;
+		margin-bottom: 1.2rem;
 	}
 	footer.article-footer {
 		text-align: center;
