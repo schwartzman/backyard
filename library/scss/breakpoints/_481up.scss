@@ -118,3 +118,18 @@ FOOTER STYLES
 		text-align: right;
 	}
 }
+
+/*********************
+TEMPLATES & PAGES
+*********************/
+
+.page-template-template-menu {
+	footer.article-footer {
+		span {
+			display: inline;
+			& + span {
+				padding-left: 1.4em;
+			}
+		}
+	}
+}

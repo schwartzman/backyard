@@ -468,6 +468,30 @@ SIDEBARS & ASIDES
 TEMPLATES & PAGES
 *********************/
 
+.page-template-template-menu {
+	h2:first-of-type {
+		margin-top: 0;
+	}
+	.mi_head {
+		margin-bottom: 0;
+		font-weight: $base-weight;
+		font-size: 1em;
+		span.note {
+			font-size: 0.9em;
+		}
+	}
+	.ingredients {
+		font-size: 0.95em;
+	}
+	footer.article-footer {
+		text-align: center;
+		font-size: 0.9em;
+		span {
+			display: block;
+		}
+	}
+}
+
 .page-hours-location {
 	.map {
 		margin-bottom: 1.5em;
