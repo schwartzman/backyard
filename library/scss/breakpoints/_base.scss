@@ -16,8 +16,7 @@ GENERAL STYLES
 *********************/
 
 body {
-	background: white url(../images/nothing.gif) no-repeat center center fixed;
-	background-size: cover;
+	background: $green-dark linear-gradient(to bottom, $green-dark 0%, $green 100%) no-repeat center top fixed;
 }
 
 @include scut-sticky-footer-fluid('#container', '.footer');

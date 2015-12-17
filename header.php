@@ -36,11 +36,13 @@
 		<?php // end of wordpress head ?>
 		<?php
 		if ( has_post_thumbnail($post->ID) ) : ?>
-			<style>
+		<style>
+		@media only screen and (min-width: 481px) {
 			body {
 				background-image: url(<?php echo( wp_get_attachment_url(get_post_thumbnail_id($post->ID)) );?>);
 			}
-			</style>
+		}
+		</style>
 		<?php endif; ?>
 
 	</head>
