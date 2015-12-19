@@ -44,7 +44,7 @@
 								$mitems = new WP_Query($args);
 
 								echo '<h2 class="h3">'.$subgroup->name.'</h2>';
-								echo ($subgroup->description) ? "<p>$subgroup->description</p>" : '';
+								echo ($subgroup->description) ? '<p class="note-subgroup">'.$subgroup->description.'</p>' : '';
 								while ($mitems->have_posts()) : $mitems->the_post();
 									backyard\menu_item_print();
 								endwhile;
