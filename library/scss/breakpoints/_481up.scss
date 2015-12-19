@@ -142,3 +142,9 @@ TEMPLATES & PAGES
 		}
 	}
 }
+
+.page-whole-foods {
+	.hentry{
+		@include ghostback(0.15);
+	}
+}

@@ -531,9 +531,11 @@ TEMPLATES & PAGES
 	span.wholefood {
 		display: inline-block;
 		border: solid 1px $amber;
-		padding: 3px 7px;
+		padding: 4px 9px;
 		margin: 0 10px 10px 0;
-		font-weight: $base-weight + 100;
+		font-family: $sans-serif-display;
+		font-size: 15px;
+		@include ghostback();
 	}
 }
 
