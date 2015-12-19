@@ -112,7 +112,11 @@ FOOTER STYLES
 
 .footer {
 	#inner-footer {
-		padding: 4px 0 3px;
+		padding: 10px 0 3px;
+	}
+	.ticulars,
+	.octopus {
+		margin-top: 0;
 	}
 	.ticulars {
 		font-size: 13px;
