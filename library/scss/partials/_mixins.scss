@@ -5,12 +5,12 @@ Author:
 Stylesheet: Mixins Stylesheet
 ******************************************************************/
 
-@mixin ghostback() {
-	background: transparentize(whitesmoke, 0.2);
+@mixin ghostback($shift: 0.2) {
+	background: transparentize(whitesmoke, $shift);
 }
 
-@mixin ghostbord() {
-	border: solid 1px transparentize(whitesmoke, 0.1);
+@mixin ghostbord($shift: 0.1) {
+	border: solid 1px transparentize(whitesmoke, $shift);
 }
 
 @function img-url($file){
