@@ -13,6 +13,10 @@ Stylesheet: Mixins Stylesheet
 	border: solid 1px transparentize(whitesmoke, 0.1);
 }
 
+@function img-url($file){
+  @return url(../images/#{$file});
+}
+
 /*********************
 TRANSITION
 *********************/
