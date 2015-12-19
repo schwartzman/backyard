@@ -71,11 +71,16 @@ NAVIGATION STYLES
 nav {
 	float: right;
 	clear: right;
-	margin-top: 36px;
+}
+
+i.nav-toggle {
+	display: none;
 }
 
 .nav {
+	display: block;
 	border: 0;
+	margin-bottom: 0;
 	ul {
 		margin-top: 0;
 	}
@@ -87,8 +92,8 @@ nav {
 		}
 		a {
 			border-bottom: 0;
-			font-weight: $base-weight + 100;
-			@include scut-padding(0.75em n);
+			font-size: 15px;
+			padding: 0.75em 0.5em;
 			&:hover, &:focus {
 				color: black;
 			}
@@ -132,8 +137,14 @@ nav {
 			top: auto;
 			visibility: visible;
 		}
-
 	} /* end .menu ul li */
+
+	& > li {
+		& > a {
+			@include scut-vcenter-lh(90px);
+			@include scut-padding(0 n);
+		}
+	}
 
 	/* highlight current page */
 	li.current-menu-item,

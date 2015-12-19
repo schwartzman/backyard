@@ -9,10 +9,6 @@ be seen on the Desktop.
 
 ******************************************************************/
 
-i.nav-toggle {
-	display: none;
-}
-
 nav {
 	clear: none;
 	margin-top: 0;
@@ -24,12 +20,7 @@ nav {
 		a {
 			font-weight: $base-weight-display;
 			font-size: 16px;
-		}
-	}
-	& > li {
-		& > a {
-			@include scut-vcenter-lh(90px);
-			@include scut-padding(0 n);
+			@include scut-padding(n 0.75em);
 		}
 	}
 }

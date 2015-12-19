@@ -1,0 +1,7 @@
+.nav {
+	li {
+		a {
+			@include scut-padding(n 0.75em);
+		}
+	}
+}
