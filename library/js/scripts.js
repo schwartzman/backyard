@@ -89,4 +89,13 @@ $('.nav-toggle').click(function(){
   $(this).toggleClass('fa-bars fa-times');
 });
 
+var menuPar = $('.nav > li').has('.sub-menu');
+
+menuPar.children('a').append('<i class="subnav-toggle fa fa-angle-down"></i>');
+
+menuPar.click(function(){
+	$(this).children('.sub-menu').slideToggle(200);
+	menuPar.find('i').toggleClass('fa-angle-up fa-angle-down');	
+});
+
 }); /* end of as page load scripts */

@@ -104,7 +104,7 @@ i.nav-toggle {
 			margin-top: 0;
 			border-top: 0;
 			position: absolute;
-			visibility: hidden;
+			top: auto;
 			z-index: 8999;
 
 			li {
@@ -130,12 +130,6 @@ i.nav-toggle {
 			li.current_page_ancestor {
 				a {}
 			}
-		}
-
-		/* showing sub-menus */
-		&:hover > ul {
-			top: auto;
-			visibility: visible;
 		}
 	} /* end .menu ul li */
 

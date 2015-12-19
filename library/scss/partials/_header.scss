@@ -35,11 +35,16 @@ NAVIGATION STYLES
 	border-bottom: 0;
 	margin: 0 0 5px;
 
+	.subnav-toggle {
+		margin-left: 3px;
+	    font-size: 0.8em;
+	}
+
 	li {
 
 		a {
 			display: block;
-			color: black;
+			color: black !important;
 			text-decoration: none;
 			padding: 0.5em 0.75em;
 			font-family: $sans-serif-display;
@@ -60,6 +65,7 @@ NAVIGATION STYLES
 		ul.sub-menu,
 		ul.children {
 			margin: 0;
+			display: none;
 
 			li {
 
