@@ -42,7 +42,7 @@ style a page via class
 				display: inline-block;
 				padding: 1em 2em;
 				@include ghostbord();
-				font-weight: $base-weight + 100;
+				font-weight: $base-weight-display + 100;
 				text-shadow: 0 0 15px transparentize(white, 0.3);
 			}
 		}
@@ -475,7 +475,7 @@ TEMPLATES & PAGES
 		margin-bottom: 1rem;
 	}
 	.mi_head {
-		font-weight: $base-weight;
+		font-weight: $base-weight-display;
 		font-size: 1em;
 		margin-bottom: 0;
 		& + .mi_head {
@@ -518,7 +518,7 @@ TEMPLATES & PAGES
 	section.cleanse-form {
 		p.nb {
 			font-family: $sans-serif-display;
-			font-weight: $base-weight + 200;
+			font-weight: $base-weight-display + 200;
 		}
 	}
 }

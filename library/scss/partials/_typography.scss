@@ -9,6 +9,7 @@ $sans-serif-display:	'Raleway', sans-serif;
 $sans-serif:			'Quattrocento Sans', sans-serif;
 
 $base-weight:			400;
+$base-weight-display:	400;
 
 body {
 	font-family: $sans-serif;
@@ -38,7 +39,7 @@ H1, H2, H3, H4, H5 STYLES
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	font-family: $sans-serif-display;
 	text-rendering: optimizelegibility;
-	font-weight: $base-weight - 100;
+	font-weight: $base-weight-display - 100;
 	a {
 		text-decoration: none;
 	}
