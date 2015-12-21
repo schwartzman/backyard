@@ -96,4 +96,9 @@ menuPar.click(function(){
 	menuPar.find('i').toggleClass('fa-angle-up fa-angle-down');	
 });
 
+$('.pix').masonry({
+	gutter: 20,
+	itemSelector: '.pic'
+});
+
 }); /* end of as page load scripts */
