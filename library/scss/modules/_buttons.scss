@@ -14,7 +14,7 @@ Stylesheet: Button Styles
   background-color: $green-darker;
   cursor: pointer;
   display: inline-block;
-  @include transition(background-color 0.14s ease-in-out);
+  transition: background-color 0.14s ease-in-out;
   &:hover,
   &:active {
     color: whitesmoke;
