@@ -13,25 +13,8 @@ Stylesheet: Mixins Stylesheet
 	border: solid 1px transparentize(whitesmoke, $shift);
 }
 
-@function img-url($file){
-  @return url(../images/#{$file});
 }
 
-/*********************
-TRANSITION
-*********************/
-
-/*
-I totally rewrote this to be cleaner and easier to use.
-You'll need to be using Sass 3.2+ for these to work.
-Thanks to @anthonyshort for the inspiration on these.
-USAGE: @include transition(all 0.2s ease-in-out);
-*/
-
-@mixin transition($transition...) {
-  // defining prefixes so we can use them in mixins below
-  $prefixes:      ("-webkit-", "" );
-  @each $prefix in $prefixes {
-    #{$prefix}transition: $transition;
-  }
+@function img-url($file){
+  @return url(../images/#{$file});
 }
