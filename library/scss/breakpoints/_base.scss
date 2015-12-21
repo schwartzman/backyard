@@ -467,6 +467,35 @@ SIDEBARS & ASIDES
 TEMPLATES & PAGES
 *********************/
 
+.home {
+	.pix {
+		margin: 0 auto;
+		&, .pic, .caption {
+			width: 320px;
+			max-width: 100%;
+		}
+		.pic, .caption {
+			box-sizing: border-box;
+		}
+		.pic {
+			margin-bottom: $pixGutter * 1px;
+		}
+		img {
+			max-width: 100%;
+			display: block;
+		}
+		.caption {
+			@include ghostback();
+			@include ghostbord();
+			border-top: none;
+			font-size: 14px;
+			line-height: 1.2em;
+			padding: 12px 15px;
+			display: inline-block;
+		}
+	}
+}
+
 .page-template-template-menu {
 	h2:first-of-type {
 		margin-top: 0;

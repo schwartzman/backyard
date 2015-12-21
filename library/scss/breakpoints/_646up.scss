@@ -1,0 +1,8 @@
+.home {
+	.pix {
+		@include pixW(2);
+		.pic, .caption {
+			width: $pixColumn * 1px;
+		}
+	}
+}

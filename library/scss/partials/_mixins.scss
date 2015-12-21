@@ -13,6 +13,8 @@ Stylesheet: Mixins Stylesheet
 	border: solid 1px transparentize(whitesmoke, $shift);
 }
 
+@mixin pixW($cols) {
+	width: ( $pixColumn * $cols + $pixGutter * ($cols - 1) ) * 1px;
 }
 
 @function img-url($file){
