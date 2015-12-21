@@ -109,6 +109,7 @@ i.nav-toggle {
 
 			li {
 				&:hover, &:focus {
+					background-color: transparentize($green-dark, 0.7);
 				}
 				a {
 					padding-left: 10px;
@@ -133,10 +134,16 @@ i.nav-toggle {
 		}
 	} /* end .menu ul li */
 
+
 	& > li {
 		& > a {
 			@include scut-vcenter-lh(90px);
 			@include scut-padding(0 n);
+		}
+		&:last-child {
+			ul.sub-menu {
+				right: 0;
+			}
 		}
 	}
 

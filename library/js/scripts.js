@@ -89,11 +89,19 @@ $('.nav-toggle').click(function(){
   $(this).toggleClass('fa-bars fa-times');
 });
 
+function toggleDrop(target) {
+	target.children('.sub-menu').slideToggle(200);
+	target.find('i').toggleClass('fa-angle-up fa-angle-down');	
+	target.toggleClass('byc-drop-open');
+}
+
 var menuPar = $('.nav > li').has('.sub-menu');
 menuPar.children('a').append('<i class="subnav-toggle fa fa-angle-down"></i>');
+
 menuPar.click(function(){
-	$(this).children('.sub-menu').slideToggle(200);
-	menuPar.find('i').toggleClass('fa-angle-up fa-angle-down');	
+	var $this = $(this);
+	toggleDrop( $this.siblings('.byc-drop-open') );
+	toggleDrop( $this );
 });
 
 $('.pix').masonry({
