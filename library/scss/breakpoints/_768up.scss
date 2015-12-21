@@ -306,3 +306,20 @@ FOOTER STYLES
 		margin: 0;
 	}
 }
+
+/*********************
+TEMPLATES & PAGES
+*********************/
+
+.home {
+	.hentry {
+		.entry-content {
+			h2 {
+				@include scut-padding(n 2em);
+				span {
+					display: block;
+				}
+			}
+		}
+	}
+}

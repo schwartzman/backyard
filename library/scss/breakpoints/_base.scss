@@ -26,28 +26,6 @@ WORDPRESS BODY CLASSES
 style a page via class
 ********************/
 
-.home {
-	.hentry {
-		background: none;
-		border: none;
-		header {
-			display: none;
-		}
-		.entry-content {
-			padding-top: 0;
-			text-align: center;
-			h1 {
-				font-size: 1.3em;
-				border: solid 1px orange;
-				display: inline-block;
-				padding: 1em 2em;
-				@include ghostbord();
-				font-weight: $base-weight-display + 100;
-				text-shadow: 0 0 15px transparentize(white, 0.3);
-			}
-		}
-	}
-}
 .blog {}                          /* blog template page */
 .archive {}                       /* archive page */
 .date {}                          /* date archive page */
@@ -479,33 +457,33 @@ SIDEBARS & ASIDES
 TEMPLATES & PAGES & SECTIONS
 *********************/
 
-	.pix {
-		margin: 0 auto;
-		&, .pic, .caption {
-			width: 320px;
-			max-width: 100%;
-		}
-		.pic, .caption {
-			box-sizing: border-box;
-		}
-		.pic {
-			margin-bottom: $pixGutter * 1px;
-		}
-		img {
-		height: 320px;
-			max-width: 100%;
-			display: block;
-		}
-		.caption {
-			@include ghostback();
-			@include ghostbord();
-			border-top: none;
-			font-size: 14px;
-			line-height: 1.2em;
-			padding: 12px 15px;
-			display: inline-block;
-		}
+.pix {
+	margin: 0 auto;
+	&, .pic, .caption {
+		width: 320px;
+		max-width: 100%;
 	}
+	.pic, .caption {
+		box-sizing: border-box;
+	}
+	.pic {
+		margin-bottom: $pixGutter * 1px;
+	}
+	img {
+		height: 320px;
+		max-width: 100%;
+		display: block;
+	}
+	.caption {
+		@include ghostback();
+		@include ghostbord();
+		border-top: none;
+		font-size: 14px;
+		line-height: 1.2em;
+		padding: 12px 15px;
+		display: inline-block;
+	}
+}
 
 
 .home,
@@ -545,6 +523,27 @@ TEMPLATES & PAGES & SECTIONS
 		}
 	}
 }
+
+.home {
+	.hentry {
+		header {
+			padding-top: 0;
+			display: none;
+		}
+		.entry-content {
+			padding-top: 15%;
+			text-align: center;
+			h2 {
+				@include ghostbord(0.3);
+				@include ghostback(0.5);
+				display: inline-block;
+				padding: 1em;
+				margin: 0;
+				font-weight: $base-weight-display + 100;
+				font-size: 5.7vw;
+			}
+		}
+	}
 }
 
 .page-template-template-menu {

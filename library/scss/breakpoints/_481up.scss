@@ -132,6 +132,19 @@ FOOTER STYLES
 TEMPLATES & PAGES
 *********************/
 
+.home {
+	.hentry {
+		.entry-content {
+			h2 {
+				@include ghostbord(0.2);
+				@include ghostback(0.3);
+				font-size: 1.7em;
+			}
+		}
+	}
+}
+
+
 .page-template-template-menu {
 	footer.article-footer {
 		span {
