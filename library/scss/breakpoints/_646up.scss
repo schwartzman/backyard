@@ -1,8 +1,9 @@
-.home {
-	.pix {
-		@include pixW(2);
-		.pic, .caption {
-			width: $pixColumn * 1px;
-		}
+.pix {
+	@include pixW(2);
+	.pic, .caption {
+		width: $pixColumn * 1px;
+	}
+	img {
+		height: $pixColumn * 1px;
 	}
 }

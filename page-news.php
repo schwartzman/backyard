@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 	<?php
-		$hose = @file_get_contents("https://api.instagram.com/v1/users/1642104389/media/recent/?count=9&client_id=50e4340408904b8c96383f4a74c9cfa9");
+		$hose = @file_get_contents("https://api.instagram.com/v1/users/1642104389/media/recent/?count=12&client_id=50e4340408904b8c96383f4a74c9cfa9");
 		$json = json_decode($hose);
 		$pix = $json->data;
     ?>
@@ -42,6 +42,10 @@
 			                    <?php endforeach; ?>
 			                    </section>
 				                <?php endif; ?>
+
+                                <footer class="article-footer cf">
+				                	<h2>See more on <a href="https://instagram.com/backyardeats/" target="_blank"><i class="fa fa-instagram"></i></a></h2>
+				                </footer>
 
 							</article>
 

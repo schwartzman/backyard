@@ -125,6 +125,18 @@ a, a:visited {
 	}
 }
 
+i {
+	&.fa-facebook-square:hover {
+		color: #3b5998;
+	}
+	&.fa-instagram:hover {
+		color: #3f729b;
+	}
+	&.fa-tripadvisor:hover {
+		color: #589442;
+	}
+}
+
 /*********************
 POSTS & CONTENT STYLES
 *********************/
@@ -464,10 +476,9 @@ SIDEBARS & ASIDES
 	}
 
 /*********************
-TEMPLATES & PAGES
+TEMPLATES & PAGES & SECTIONS
 *********************/
 
-.home {
 	.pix {
 		margin: 0 auto;
 		&, .pic, .caption {
@@ -481,6 +492,7 @@ TEMPLATES & PAGES
 			margin-bottom: $pixGutter * 1px;
 		}
 		img {
+		height: 320px;
 			max-width: 100%;
 			display: block;
 		}
@@ -494,6 +506,45 @@ TEMPLATES & PAGES
 			display: inline-block;
 		}
 	}
+
+
+.home,
+.page-news {
+	.hentry {
+		background: none;
+		border: none;
+	}
+}
+
+.page-news {
+	.hentry {
+		header,
+		footer {
+			@include ghostback();
+			@include ghostbord();
+			padding: 1rem;
+			max-width: 940px;
+			margin: 0 auto 20px;
+		}
+		footer {
+			text-align: center;
+			margin-bottom: 0;
+			h2 {
+				margin: 0;
+				font-weight: $base-weight-display;
+				a {
+					color: inherit;
+					i {
+						padding-left: 3px;
+					}
+				}
+			}
+		}
+		.entry-content {
+			display: none;
+		}
+	}
+}
 }
 
 .page-template-template-menu {
