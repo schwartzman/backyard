@@ -48,6 +48,7 @@
 	</head>
 
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
+	<?php include_once('library/analytics.php'); ?>
 
 		<div id="container">
 
