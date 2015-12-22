@@ -22,28 +22,6 @@ LAYOUT & GRID STYLES
 
 }
 
-.page-hours-location {
-
-	.map {
-		width: 360px;
-		margin-left: 20px;
-		float: right;
-	}
-
-}
-
-.page-contact {
-
-	.contact-form {
-		margin-left: 20px;
-		float: right;
-		width: 66%;
-		border-bottom: none;
-		margin-bottom: 0;
-	}
-
-}
-
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -212,5 +190,23 @@ TEMPLATES & PAGES
 				}
 			}
 		}
+	}
+}
+
+.page-hours-location {
+	.map {
+		width: 360px;
+		margin-left: 20px;
+		float: right;
+	}
+}
+
+.page-contact {
+	.contact-form {
+		margin-left: 20px;
+		float: right;
+		width: 66%;
+		border-bottom: none;
+		margin-bottom: 0;
 	}
 }
