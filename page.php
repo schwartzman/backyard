@@ -17,10 +17,37 @@
 								</header> <?php // end article header ?>
 
 								<section class="entry-content cf" itemprop="articleBody">
+									<?php if (is_page('contact')) : ?>
+										<div class="contact-form">
+											<div id="wufoo-wxvatyd1u3dz4a">
+											Please fill out our <a href="https://emmafountain.wufoo.com/forms/wxvatyd1u3dz4a">contact form</a>.
+											</div>
+											<script type="text/javascript">var wxvatyd1u3dz4a;(function(d, t) {
+											var s = d.createElement(t), options = {
+											'userName':'emmafountain',
+											'formHash':'wxvatyd1u3dz4a',
+											'autoResize':true,
+											'height':'577',
+											'async':true,
+											'host':'wufoo.com',
+											'header':'hide',
+											'ssl':true};
+											s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+											s.onload = s.onreadystatechange = function() {
+											var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+											try { wxvatyd1u3dz4a = new WufooForm();wxvatyd1u3dz4a.initialize(options);wxvatyd1u3dz4a.display(); } catch (e) {}};
+											var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+											})(document, 'script');</script>
+										</div>
+									<?php endif; ?>
+									<?php if (is_page('hours-location')) : ?>
+										<div class="map">
+											<!-- <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBRy029qxPDIT4hb6PoDX4BZ96eTrQ6NYA&q=place_id:3Tx75K-eGPL49C7DOR" width="360" height="360" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+											<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBRy029qxPDIT4hb6PoDX4BZ96eTrQ6NYA&q=backyard+cafe,phnom+penh,cambodia" width="100%" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>
+										</div>
+									<?php endif; ?>
 									<?php the_content(); ?>
-
 								</section> <?php // end article section ?>
-
 								<?php if (is_page('cleanses')) : ?>
 									<section class="entry-content cf cleanse-form">
 										<p class="nb">All fields are required.</p>
@@ -44,7 +71,6 @@
 										var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
 										})(document, 'script');</script>
 									</section>
-
 								<?php endif; ?>
 
 							</article>
