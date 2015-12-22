@@ -55,7 +55,7 @@
 
 				<div id="inner-header" class="wrap cf">
 
-					<a href="/" id="logo" rel="nofollow"><img src="<?=IMGPATH?>logo-300.png" alt="Backyard Cafe"></a>
+					<a href="/" id="logo" rel="nofollow"><img src="<?=IMGPATH?>logo-150.png" alt="Backyard Cafe"></a>
 					<i class="nav-toggle fa fa-fw fa-bars"></i>
 
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
