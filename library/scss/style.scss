@@ -40,9 +40,6 @@ the whole project.
 // import mixins
 @import "partials/mixins";
 
-// the grid
-@import "partials/grid";
-
 /*********************
 IMPORTING MODULES
 Modules are reusable blocks or elements we use throughout the project.
@@ -51,14 +48,8 @@ I mean, you can do whatever you want. The world is your oyster. Unless
 you hate oysters, then the world is your peanut butter & jelly sandwich.
 *********************/
 
-// alert boxes
-@import "modules/alerts";
-
 // buttons
 @import "modules/buttons";
-
-// forms (inputs & labels)
-@import "modules/forms";
 
 /*********************
 BASE (MOBILE) SIZE
@@ -128,17 +119,6 @@ you can add resource intensive styles.
 
 	// styles in 1020up.scss
 	@import "breakpoints/1020up";
-
-} // end of media query
-
-/*********************
-LARGE VIEWING SIZE
-This is for the larger monitors and possibly full screen viewers.
-*********************/
-@media only screen and (min-width: 1240px) {
-
-	// styles in 1240up.scss
-	@import "breakpoints/1240up";
 
 } // end of media query
 
