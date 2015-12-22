@@ -14,4 +14,4 @@
 
 	</body>
 
-</html> <!-- end of site. what a ride! -->
+</html>
