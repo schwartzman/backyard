@@ -51,12 +51,9 @@ function custom_menu_column_content( $column_name, $post_id ) {
 
 // kludge
 function nocache() {
-	if( is_page('news') ) {
-		return false;
-	} else {
-		return true;
-	}
+    return ( is_page('news') ) ? false : true;
 }
+
 add_filter( 'do_rocket_generate_caching_files', 'backyard\nocache' );
 
 add_filter('manage_menu_item_posts_columns', 'backyard\custom_menu_columns');
