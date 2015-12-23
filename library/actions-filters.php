@@ -49,6 +49,16 @@ function custom_menu_column_content( $column_name, $post_id ) {
 	}
 }
 
+// kludge
+function nocache() {
+	if( is_page('news') ) {
+		return false;
+	} else {
+		return true;
+	}
+}
+add_filter( 'do_rocket_generate_caching_files', 'backyard\nocache' );
+
 add_filter('manage_menu_item_posts_columns', 'backyard\custom_menu_columns');
 add_action('manage_menu_item_posts_custom_column', 'backyard\custom_menu_column_content', 10, 2);
 add_filter('body_class', 'backyard\add_slug_body_class');
