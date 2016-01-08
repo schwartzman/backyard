@@ -112,15 +112,6 @@ POSTS & CONTENT STYLES
 				margin: 0 0 1.5em;
 			}
 
-
-			ul, ol, table, dl {}
-
-			ul, ol {
-
-				li {}
-
-			}
-
 			ul {
 				list-style-type: circle;
 				list-style-position: outside;
@@ -131,12 +122,6 @@ POSTS & CONTENT STYLES
 						margin-top: 5px;
 					}
 				}
-
-			}
-
-			ol {
-
-				li {}
 
 			}
 
@@ -177,14 +162,7 @@ POSTS & CONTENT STYLES
 				border-left: 3px solid $blue;
 				font-style: italic;
 				color: $meta-gray;
-
-				&:before {}
-
 			}
-
-			dl {}
-
-			dt {}
 
 			dd {
 				margin-left: 0;
