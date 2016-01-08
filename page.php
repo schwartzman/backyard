@@ -42,8 +42,7 @@
 									<?php endif; ?>
 									<?php if (is_page('hours-location')) : ?>
 										<div class="map">
-											<!-- <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBRy029qxPDIT4hb6PoDX4BZ96eTrQ6NYA&q=place_id:3Tx75K-eGPL49C7DOR" width="360" height="360" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-											<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBRy029qxPDIT4hb6PoDX4BZ96eTrQ6NYA&q=backyard+cafe,phnom+penh,cambodia" width="100%" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>
+											<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBRy029qxPDIT4hb6PoDX4BZ96eTrQ6NYA&q=place_id:ChIJb1E4ODRRCTERJ8aZBoIoUbg" width="360" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>
 										</div>
 									<?php endif; ?>
 									<?php the_content(); ?>
