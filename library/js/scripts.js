@@ -30,4 +30,11 @@ $('.pix').masonry({
 	itemSelector: '.pic'
 });
 
+// ugh. markdown outputs thead no matter what, so we have to do:
+$('thead').each(function(){
+	if ( !$.trim($(this).text()) ) {
+		$(this).hide()
+	}
+})
+
 });
