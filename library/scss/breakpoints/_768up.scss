@@ -13,15 +13,6 @@ LAYOUT & GRID STYLES
 	width: 98%;
 }
 
-.third {
-	width: 94/3*1%;
-	float: left;
-	& + .third {
-		margin-left: 3%;
-	}
-
-}
-
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -205,11 +196,26 @@ TEMPLATES & PAGES
 }
 
 .page-contact {
-	.contact-form {
-		margin-left: 20px;
-		float: right;
-		width: 66%;
-		border-bottom: none;
-		margin-bottom: 0;
+	section.entry-content {
+		@include outer-container;
+		.contact-copy {
+			@include span-columns(4);
+			@include shift(-12);
+		}
+		.contact-form {
+			@include span-columns(8);
+			@include shift(4);
+			border-bottom: none;
+			margin-bottom: 0;
+		}
+	}
+}
+
+.page-about {
+	section.entry-content {
+		@include outer-container;
+		.person {
+			@include span-columns(4);
+		}
 	}
 }

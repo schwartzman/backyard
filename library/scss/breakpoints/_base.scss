@@ -493,12 +493,15 @@ TEMPLATES & PAGES & SECTIONS
 }
 
 .page-about {
-	.third {
+	.person {
 		h3 {
 			em {
 				font-size: 85%;
 			}
 		}
+		img {
+			margin-bottom: 1em;
+		}		
 	}
 }
 
