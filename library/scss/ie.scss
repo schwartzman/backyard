@@ -21,6 +21,8 @@ import the mixins file so SASS can understand the variables.
 ******************************************************************/
 
 @import "libraries/scut";
+@import "libraries/bourbon/bourbon";
+@import "libraries/neat/neat";
 @import "partials/variables"; // import variables
 @import "partials/typography"; // import typography
 @import "partials/mixins"; // import mixins
