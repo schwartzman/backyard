@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 	<?php
-		$hose = @file_get_contents("https://api.instagram.com/v1/users/1642104389/media/recent/?count=12&client_id=50e4340408904b8c96383f4a74c9cfa9");
+		$hose = @file_get_contents("https://api.instagram.com/v1/users/1642104389/media/recent/?count=12&access_token=1642104389.50e4340.7d6f6bdd16274fac963bdf0e5c821ccc");
 		$json = json_decode($hose);
 		$pix = $json->data;
     ?>
@@ -24,11 +24,11 @@
 								</header> <?php // end article header ?>
 
 								<section class="entry-content cf" itemprop="articleBody">
-								
+
 									<?php the_content(); ?>
 
 								</section> <?php // end article section ?>
-								
+
 				                <?php if ($pix) : ?>
 			                    <section class="pix">
 			                    <?php
