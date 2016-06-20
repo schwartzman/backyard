@@ -415,6 +415,16 @@ TEMPLATES & PAGES & SECTIONS
 				margin: 0;
 				font-weight: $base-weight-display + 100;
 				font-size: 5.7vw;
+				.blam {
+					@include ghostbord(0.4);
+					border-bottom: none;
+					border-left: none;
+					border-right: none;
+					font-weight: 400;
+					font-size: 0.9em;
+					margin-top: 0.4em;
+					padding-top: 0.3em;
+				}
 			}
 		}
 	}
@@ -501,7 +511,7 @@ TEMPLATES & PAGES & SECTIONS
 		}
 		img {
 			margin-bottom: 1em;
-		}		
+		}
 	}
 }
 
