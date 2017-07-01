@@ -74,8 +74,9 @@ form.wufoo {
 	}
 
 	#lola {
-		@include ghostback;
-		@include ghostbord;
+
+		border: 1px solid #e6e6e6;
+		background-color: #f5f5f5;
 		padding: 10px 12px;
 		border-radius: 0;
 		tfoot {
@@ -89,8 +90,8 @@ form.wufoo {
 
 }
 
-form.wufoo#form7   // old cleanse form
-form.wufoo#form14  // new cleanse form
+form.wufoo#form7,   // old cleanse form
+form.wufoo#form14   // new cleanse form
 {
 	span.req {
 		display: none !important;
