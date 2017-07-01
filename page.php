@@ -47,26 +47,27 @@
 									<?php endif; ?>
 									<?php the_content(); ?>
 								</section> <?php // end article section ?>
+
 								<?php if (is_page('cleanses')) : ?>
 									<section class="entry-content cf cleanse-form">
 										<p class="nb">All fields are required.</p>
-										<div id="wufoo-p138y3v81e7t4n3">
-											Please fill out our <a href="https://emmafountain.wufoo.com/forms/p138y3v81e7t4n3">online form</a>.
+										<div id="wufoo-z1afgx0u19zpsxn">
+										Pleae fill out our <a href="https://emmafountain.wufoo.eu/forms/z1afgx0u19zpsxn">cleanse order form</a>.
 										</div>
-										<script type="text/javascript">var p138y3v81e7t4n3;(function(d, t) {
+										<script type="text/javascript">var z1afgx0u19zpsxn;(function(d, t) {
 										var s = d.createElement(t), options = {
 										'userName':'emmafountain',
-										'formHash':'p138y3v81e7t4n3',
+										'formHash':'z1afgx0u19zpsxn',
 										'autoResize':true,
-										'height':'1085',
+										'height':'1651',
 										'async':true,
-										'host':'wufoo.com',
-										'header':'hide',
+										'host':'wufoo.eu',
+										'header':'show',
 										'ssl':true};
-										s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+										s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.eu/scripts/embed/form.js';
 										s.onload = s.onreadystatechange = function() {
 										var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-										try { p138y3v81e7t4n3 = new WufooForm();p138y3v81e7t4n3.initialize(options);p138y3v81e7t4n3.display(); } catch (e) {}};
+										try { z1afgx0u19zpsxn = new WufooForm();z1afgx0u19zpsxn.initialize(options);z1afgx0u19zpsxn.display(); } catch (e) {}};
 										var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
 										})(document, 'script');</script>
 									</section>
