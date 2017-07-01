@@ -73,9 +73,25 @@ form.wufoo {
 		}
 	}
 
+	#lola {
+		@include ghostback;
+		@include ghostbord;
+		padding: 10px 12px;
+		border-radius: 0;
+		tfoot {
+			display: none;
+		}
+		tbody td {
+			border-bottom: none;
+			padding-bottom: 0;
+		}
+	}
+
 }
 
-form.wufoo#form7 {
+form.wufoo#form7   // old cleanse form
+form.wufoo#form14  // new cleanse form
+{
 	span.req {
 		display: none !important;
 	}
