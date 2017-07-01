@@ -62,7 +62,7 @@
 										'height':'1651',
 										'async':true,
 										'host':'wufoo.eu',
-										'header':'show',
+										'header':'hide',
 										'ssl':true};
 										s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.eu/scripts/embed/form.js';
 										s.onload = s.onreadystatechange = function() {
