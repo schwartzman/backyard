@@ -1,16 +1,16 @@
 {
-  "name": "backyard-build",
-  "description": "backyard cafe build module",
-  "private": "true",
-  "license": "WTFPL",
-  "repository": {},
-  "dependencies": {
-    "node-sass": "latest",
-    "autoprefixer": "latest",
-    "postcss-cli": "latest"
-  },
-  "scripts": {
-    "sass": "node-sass --output-style expanded --output ../library/css/ ../library/scss/",
-    "postsass": "postcss --use autoprefixer --replace ../library/css/*"
-  }
+	"name": "backyard-build",
+	"description": "backyard cafe build module",
+	"private": "true",
+	"license": "WTFPL",
+	"repository": {},
+	"dependencies": {
+		"node-sass": "4",
+		"autoprefixer": "6",
+		"postcss-cli": "3"
+	},
+	"scripts": {
+		"sass": "node-sass --output-style expanded --output ../library/css/ ../library/scss/",
+		"postsass": "postcss --use autoprefixer --no-map --replace ../library/css/*"
+	}
 }
