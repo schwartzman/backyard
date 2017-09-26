@@ -18,26 +18,8 @@
 
 								<section class="entry-content cf" itemprop="articleBody">
 									<?php if (is_page('contact')) : ?>
-										<div class="contact-form">
-											<div id="wufoo-wxvatyd1u3dz4a">
-											Please fill out our <a href="https://emmafountain.wufoo.com/forms/wxvatyd1u3dz4a">contact form</a>.
-											</div>
-											<script type="text/javascript">var wxvatyd1u3dz4a;(function(d, t) {
-											var s = d.createElement(t), options = {
-											'userName':'emmafountain',
-											'formHash':'wxvatyd1u3dz4a',
-											'autoResize':true,
-											'height':'577',
-											'async':true,
-											'host':'wufoo.com',
-											'header':'hide',
-											'ssl':true};
-											s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-											s.onload = s.onreadystatechange = function() {
-											var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-											try { wxvatyd1u3dz4a = new WufooForm();wxvatyd1u3dz4a.initialize(options);wxvatyd1u3dz4a.display(); } catch (e) {}};
-											var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-											})(document, 'script');</script>
+										<div class="contact-form form-outer">
+											<?=backyard\form('contact', 'wxvatyd1u3dz4a', '577')?>
 										</div>
 									<?php endif; ?>
 									<?php if (is_page('hours-location')) : ?>
@@ -49,27 +31,16 @@
 								</section> <?php // end article section ?>
 
 								<?php if (is_page('cleanses')) : ?>
-									<section class="entry-content cf cleanse-form">
+									<section class="entry-content cf cleanse-form form-outer">
 										<p class="nb">All fields are required.</p>
-										<div id="wufoo-z1afgx0u19zpsxn">
-										Pleae fill out our <a href="https://emmafountain.wufoo.eu/forms/z1afgx0u19zpsxn">cleanse order form</a>.
-										</div>
-										<script type="text/javascript">var z1afgx0u19zpsxn;(function(d, t) {
-										var s = d.createElement(t), options = {
-										'userName':'emmafountain',
-										'formHash':'z1afgx0u19zpsxn',
-										'autoResize':true,
-										'height':'1651',
-										'async':true,
-										'host':'wufoo.eu',
-										'header':'hide',
-										'ssl':true};
-										s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.eu/scripts/embed/form.js';
-										s.onload = s.onreadystatechange = function() {
-										var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-										try { z1afgx0u19zpsxn = new WufooForm();z1afgx0u19zpsxn.initialize(options);z1afgx0u19zpsxn.display(); } catch (e) {}};
-										var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-										})(document, 'script');</script>
+										<?=backyard\form('cleanse', 'z1afgx0u19zpsxn', '1651')?>
+									</section>
+								<?php endif; ?>
+
+								<?php if (is_page('lunchboxes')) : ?>
+									<section class="entry-content cf lunchbox-form form-outer">
+										<p class="nb">All fields are required.</p>
+										<?=backyard\form('lunchbox', 'zkz2vaj0ski000', '1124')?>
 									</section>
 								<?php endif; ?>
 

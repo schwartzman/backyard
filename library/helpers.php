@@ -33,4 +33,36 @@ function menu_item_print() {
 	endif;
 }
 
+/**
+ * Generate Wufoo forms
+ * @param  string   $handle   arbitrary identifier
+ * @param  string   $id       Wufoo identifier
+ * @param  string   $height   Wufoo-generated
+ * @return string             bunch of markup & script
+ */
+function form($handle, $id, $height)
+{
+	$res = <<<EOT
+<div id="wufoo-$id">
+Fill out our <a href="https://emmafountain.wufoo.eu/forms/$id">$handle form</a>.
+</div>
+<script type="text/javascript">var $id;(function(d, t) {
+var s = d.createElement(t), options = {
+'userName':'emmafountain',
+'formHash':'$id',
+'autoResize':true,
+'height':'$height',
+'async':true,
+'host':'wufoo.eu',
+'header':'hide',
+'ssl':true};
+s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.eu/scripts/embed/form.js';
+s.onload = s.onreadystatechange = function() {
+var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+try { $id = new WufooForm();$id.initialize(options);$id.display(); } catch (e) {}};
+var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+})(document, 'script');</script>
+EOT;
+return $res;
+}
 ?>
