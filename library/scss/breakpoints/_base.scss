@@ -480,12 +480,10 @@ TEMPLATES & PAGES & SECTIONS
 	}
 }
 
-.page-cleanses {
-	section.cleanse-form {
-		p.nb {
-			font-family: $sans-serif-display;
-			font-weight: $base-weight-display + 200;
-		}
+.form-outer {
+	p.nb {
+		font-family: $sans-serif-display;
+		font-weight: $base-weight-display + 200;
 	}
 }
 
