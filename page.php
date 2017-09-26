@@ -44,6 +44,13 @@
 									</section>
 								<?php endif; ?>
 
+								<?php if (is_page('cakes')) : ?>
+									<section class="entry-content cf cake-form form-outer">
+										<p class="nb">All fields are required.</p>
+										<?=backyard\form('cake', 'z1h54zdr0wrfve2', '965')?>
+									</section>
+								<?php endif; ?>
+
 							</article>
 
 							<?php endwhile; endif; ?>
