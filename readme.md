@@ -1,4 +1,7 @@
-# Bones
+# Backyard Cafe
+[![Deployment status from DeployBot](https://controlagency.deploybot.com/badge/23779030031815/54253.svg)](http://deploybot.com)
+
+## Bones
 A Lightweight Wordpress Development Theme
 
 Bones is designed to make the life of developers easier. It's built
