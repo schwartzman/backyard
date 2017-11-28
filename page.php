@@ -27,7 +27,19 @@
 											<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBRy029qxPDIT4hb6PoDX4BZ96eTrQ6NYA&q=place_id:ChIJb1E4ODRRCTERJ8aZBoIoUbg" width="360" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>
 										</div>
 									<?php endif; ?>
-									<?php the_content(); ?>
+									<?php
+									if (!is_page('home')):
+										the_content();
+									else:
+										$by_acf = get_fields(); ?>
+										<h2><span><?=$by_acf['slogan_1']?></span> <span><?=$by_acf['slogan_2']?></span>
+										<?php if ($by_acf['announce_1']): ?>
+											<span class="blam"><span><?=$by_acf['announce_1']?></span>
+											<?php if ($by_acf['announce_2']): ?> <span><?=$by_acf['announce_2']?></span><?php endif; ?>
+											</span>
+										<?php endif; ?>
+										</h2>
+								<?php endif; ?>
 								</section> <?php // end article section ?>
 
 								<?php if (is_page('cleanses')) : ?>
