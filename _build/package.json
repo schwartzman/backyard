@@ -2,15 +2,15 @@
 	"name": "backyard-build",
 	"description": "backyard cafe build module",
 	"private": "true",
-	"license": "WTFPL",
+	"license": "MIT",
 	"repository": {},
 	"dependencies": {
-		"node-sass": "4",
-		"autoprefixer": "6",
-		"postcss-cli": "3"
+		"autoprefixer": "^8.6.4",
+		"node-sass": "^4.9.0",
+		"postcss-cli": "^5.0.1"
 	},
 	"scripts": {
-		"sass": "node-sass --output-style expanded --output ../library/css/ ../library/scss/",
-		"postsass": "postcss --use autoprefixer --no-map --replace ../library/css/*"
+		"sass": "node-sass --output-style expanded -o ../library/css/ ../library/scss/",
+		"postsass": "postcss ../library/css/* --use autoprefixer --no-map --replace"
 	}
 }
