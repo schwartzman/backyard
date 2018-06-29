@@ -22,7 +22,7 @@
 											<?=backyard\form('contact', 'wxvatyd1u3dz4a', '577')?>
 										</div>
 									<?php endif; ?>
-									<?php if (is_page('hours-location')) : ?>
+									<?php if (is_page('visit')) : ?>
 										<div class="map">
 											<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBRy029qxPDIT4hb6PoDX4BZ96eTrQ6NYA&q=place_id:ChIJb1E4ODRRCTERJ8aZBoIoUbg" width="360" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>
 										</div>
