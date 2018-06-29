@@ -87,6 +87,7 @@ TEMPLATES & PAGES
 .home {
 	.hentry {
 		.entry-content {
+			padding-top: 4rem;
 			h2 {
 				@include ghostbord(0.2);
 				@include ghostback(0.3);

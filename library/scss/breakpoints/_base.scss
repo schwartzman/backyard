@@ -405,7 +405,7 @@ TEMPLATES & PAGES & SECTIONS
 			display: none;
 		}
 		.entry-content {
-			padding-top: 15%;
+			padding-top: 0;
 			text-align: center;
 			h2 {
 				@include ghostbord(0.3);
@@ -427,6 +427,11 @@ TEMPLATES & PAGES & SECTIONS
 					a {
 						color: inherit;
 					}
+				}
+			}
+			.TA_certificateOfExcellence {
+				#CDSWIDCOE {
+					margin: 2rem auto 0;
 				}
 			}
 		}
@@ -520,5 +525,13 @@ TEMPLATES & PAGES & SECTIONS
 	.contact-form {
 		border-bottom: solid 1px whitesmoke;
 		margin-bottom: 30px;
+	}
+}
+
+// tripadvisor widget fixes
+.TA_certificateOfExcellence {
+	line-height: 0;
+	#CDSWIDCOE {
+		margin-left: 0;
 	}
 }
