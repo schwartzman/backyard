@@ -68,7 +68,7 @@ form.wufoo {
 			@include scut-padding(n 0);
 			input {
 				background-color: transparent;
-				@include button();
+				@include button;
 			}
 		}
 	}
