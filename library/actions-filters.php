@@ -54,6 +54,8 @@ function nocache() {
     return ( is_page('news') ) ? false : true;
 }
 
+add_filter('user_can_richedit' , '__return_false', 50);
+
 add_filter( 'do_rocket_generate_caching_files', 'backyard\nocache' );
 
 add_filter('manage_menu_item_posts_columns', 'backyard\custom_menu_columns');
