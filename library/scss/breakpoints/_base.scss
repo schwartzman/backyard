@@ -54,6 +54,7 @@ a, a:visited {
 
 a.button {
 	@include button;
+	text-decoration: none;
 }
 
 .nopoint {
