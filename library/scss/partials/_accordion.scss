@@ -1,9 +1,9 @@
 .accordion {
+	div > :first-child {
+		margin-top: 0;
+	}
 	& > div {
 		display: none;
-		& > :first-child {
-			margin-top: 0;
-		}
 	}
 	h2 {
 		cursor: pointer;
