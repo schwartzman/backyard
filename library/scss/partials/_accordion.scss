@@ -1,0 +1,14 @@
+.accordion {
+	& > div {
+		display: none;
+		& > :first-child {
+			margin-top: 0;
+		}
+	}
+	h2 {
+		cursor: pointer;
+		.fa {
+			padding-right: 0.8rem;
+		}
+	}
+}
