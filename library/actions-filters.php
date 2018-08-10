@@ -54,14 +54,12 @@ function nocache() {
     return ( is_page('news') ) ? false : true;
 }
 
-add_filter('user_can_richedit' , '__return_false', 50);
-
+add_filter( 'jetpack_implode_frontend_css', '__return_false' );
+add_filter( 'user_can_richedit' , '__return_false', 50);
 add_filter( 'do_rocket_generate_caching_files', 'backyard\nocache' );
-
-add_filter('manage_menu_item_posts_columns', 'backyard\custom_menu_columns');
-add_action('manage_menu_item_posts_custom_column', 'backyard\custom_menu_column_content', 10, 2);
-add_filter('body_class', 'backyard\add_slug_body_class');
-add_filter('acf/settings/save_json', 'backyard\acf_json_save_point');
-add_filter('acf/settings/load_json', 'backyard\acf_json_load_point');
-add_action('admin_enqueue_scripts', 'backyard\admin_styles');
-?>
+add_filter( 'manage_menu_item_posts_columns', 'backyard\custom_menu_columns' );
+add_action( 'manage_menu_item_posts_custom_column', 'backyard\custom_menu_column_content', 10, 2 );
+add_filter( 'body_class', 'backyard\add_slug_body_class' );
+add_filter( 'acf/settings/save_json', 'backyard\acf_json_save_point' );
+add_filter( 'acf/settings/load_json', 'backyard\acf_json_load_point' );
+add_action( 'admin_enqueue_scripts', 'backyard\admin_styles' );
