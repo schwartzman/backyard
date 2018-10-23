@@ -11,6 +11,7 @@
 	},
 	"scripts": {
 		"sass": "node-sass --output-style expanded -o ../library/css/ ../library/scss/",
-		"postsass": "postcss ../library/css/* --use autoprefixer --no-map --replace"
+		"postsass": "postcss ../library/css/* --use autoprefixer --no-map --replace",
+        "w:s": "watch 'npm run sass' ../library/scss/"
 	}
 }
