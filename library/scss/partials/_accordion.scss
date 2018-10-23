@@ -4,6 +4,9 @@
 	}
 	& > div {
 		display: none;
+		&:first-of-type {
+			display: block;
+		}
 	}
 	h2 {
 		cursor: pointer;
