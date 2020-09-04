@@ -6,7 +6,7 @@
 	"repository": {},
 	"dependencies": {
 		"autoprefixer": "^8.6.4",
-		"node-sass": "^4.9.0",
+		"node-sass": "^4.13.1",
 		"postcss-cli": "^5.0.1"
 	},
 	"scripts": {
